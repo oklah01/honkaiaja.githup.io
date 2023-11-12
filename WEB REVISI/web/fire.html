@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        /* CSS untuk navbar */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+        body { 
+            margin-left: 170px;
+            margin-right: 150px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16 px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #49a0c6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,.dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #c85250;
+  
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: #f85f5f;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .carousel-container{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel-slide{
+            display: none;
+        }
+
+        img{
+            width: 45%;
+            height: auto;
+            margin-left: 300px;
+        }
+
+        p{
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 24pt;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Elements</a>
+            <div class="dropdown-content">
+                <a href="physical.html">Physical</a>
+                <a href="wind.html">Wind</a>
+                <a href="ice.html">Ice</a>
+                <a href="fire.html">Fire</a>
+                <a href="Lightning.html">Lightning</a>
+                <a href="Quantum.html">Quantum</a>
+                <a href="Imaginary.html">Imaginary</a>               
+            </div>
+        </li>
+    </ul>
+
+    <div class="carousel-container">
+
+        <div class="carousel-slide">
+            <img src="../gambar/himeko.webp" alt="image 1">
+            <p>himeko</p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="../gambar/asta.webp" alt="image 2">
+            <p>astra</p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="../gambar/mc.webp" alt="image 3">
+            <p>Mc</p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="../gambar/hook.webp" alt="image 4">
+            <p>Hook</p>
+        </div>
+
+    </div>
+
+    <script src="honkai.js"></script>
+</body>
+</html>
